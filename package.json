@@ -1,7 +1,7 @@
 {
   "name": "home",
   "version": "0.1.0",
-  "homepage": "https://HaAbdullah.github.io/me",
+  "homepage": "https://haabdullah.github.io/me/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

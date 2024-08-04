@@ -67,3 +67,16 @@
     display: flex;
     align-items: center;
 }
+
+
+
+.hoverIconFooter {
+    color: #DC4280;
+    opacity: 1;
+    transition: color 0.05s
+  }
+  
+  .hoverIconFooter:hover{
+    color:#FFFFFF;
+  }
+  
