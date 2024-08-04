@@ -1,0 +1,65 @@
+.rectangle {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: #24253A;
+  margin-top: 30px;
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+  opacity: 1;
+}
+
+
+
+.skill,
+.skill2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 169px;
+  height: 42px;
+  flex-shrink: 0;
+  border: 3px solid #DC4280;
+  background: #17181C;
+  margin-right: 60px;
+
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  
+  animation: move-rtl 9s linear infinite;
+}
+
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1603px);
+  }
+  
+}
+
+/* Apply a negative margin to the last skill to counteract the spacing */
+.skill:last-child {
+  margin-right: 0;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  border-color: #D31763;
+}
+
+

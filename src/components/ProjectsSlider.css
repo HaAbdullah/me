@@ -1,0 +1,139 @@
+.PetProjects h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; 
+  margin-top: 30px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 5px solid #545583;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 21, 36, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  width: 80%;
+  max-width: 100%;
+}
+
+.carousel-caption h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.carousel-caption h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  margin-top: 30px;
+}
+
+.carousel-caption p {
+  color: #DC4280;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  margin-top: 20px;
+}
+
+.carousel-container:hover::before {
+  background-color: rgba(13, 21, 36, 0.7);
+}
+
+.carousel-container:hover .carousel-caption {
+  opacity: 1;
+}
+
+.carousel-container .carousel-indicators .active {
+  background-color: #DC4280; 
+}
+
+.github-logo {
+  width: 39px;
+  height: 39px;
+  fill: white;
+  margin-top: 10px; 
+}
+
+.store-button {
+  color: #DC4280;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5; 
+  margin-top: 10px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .carousel-container {
+    width: 100%; 
+  }
+
+  .carousel-caption h3{
+    font-size: 30px;
+    margin-top: -65px;
+  }
+  .carousel-caption h2 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .carousel-caption p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .github-logo {
+    width: 39px;
+    height: 39px;
+    fill: white;
+    margin-top: -100px; 
+  }
+}

@@ -1,0 +1,73 @@
+/* NavigationBar.css */
+
+
+.navbar { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17181C;
+  padding: 10px;
+  z-index: 10;
+  
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800; /* Increase the font-weight for a bolder effect */
+  line-height: 66px;
+  margin-right: 20px;
+  margin-left: 130px; 
+  
+}
+
+.nav-item {
+  color: #FFF;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  margin-right: 20px;
+  text-decoration: none; 
+  transition: color 0.05s
+}
+
+.nav-item:hover{
+  color:#DC4280;
+}
+
+.navbar-icons {
+  display: flex;
+  margin-right: 127px;
+}
+
+.navbar-icons svg {
+  margin-right: 30px;
+  width: 35px;
+  height: 35px;
+
+  
+}
+
+.hoverIcon {
+  color: #ffffff;
+  opacity: 1;
+  transition: color 0.05s
+}
+
+.hoverIcon:hover{
+  color:#DC4280
+}
+

@@ -1,0 +1,106 @@
+/* Hero.css */
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 43% 30%;
+  border-radius: 50%;
+  border: 5px solid #545583;
+  z-index: 9;
+  margin-top: 100px;
+  animation-name: bobbing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
+}
+
+@keyframes bobbing {
+  0% {
+    top: 10px;
+  }
+  50%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+
+.title {
+  color: #FFF;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 66px;
+  margin-top: 10px;
+}
+
+.description {
+  color: #545583;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.say-hi-button {
+  border: 5px solid #DC4280;
+  background: #17181C;
+  color: #DC4280;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+.say-hi-button:hover{
+  color:#D31763;
+}
+.say-hi-button svg {
+  margin-right: 10px;
+}
+.say-hi-button .mail {
+  color: #DC4280;
+}
+.say-hi-button:hover .mail {
+  color: #D31763;
+}
+
+.mail{
+  color: #ffffff;
+}
+
+.mail:hover{
+  color: #D31763;
+}
+.say-hi-button:hover{
+  transform: translateY(-10px);
+  border-color: #D31763;
+  color: #D31763;
+}
