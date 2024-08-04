@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="description">
         <p>I’m a software developer and computer science student from Toronto, Canada. </p>
         <p>I’m captivated by expansive software systems, creating programs and finding</p>
-        <p>solutions to solve real-world problems</p>
+        <p>solutions to solve real-world problems.</p>
       </div>
       <div className="button-container">
       <a href={emailLink} className="say-hi-button" target="_blank" rel="noopener noreferrer">
