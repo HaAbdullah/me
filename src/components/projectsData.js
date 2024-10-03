@@ -9,7 +9,7 @@ const projectsData = {
     project2: {
       title: 'GradReadyGeese',
       desc: 'Parses a UWaterloo transcript and uses web scraping to determine courses needed to graduate',
-      techStack: 'Python, PyPDF, Beauitful Soup, HTML/CSS, JavaScript',
+      techStack: 'Python, PyPDF, Beautiful Soup, HTML/CSS, JavaScript',
       link: 'https://github.com/HaAbdullah/StarterHacks/',
       open: 'https://project2.example.com',
     },
