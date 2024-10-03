@@ -15,7 +15,7 @@ const ContactMe = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    // Sent to your main personal email.
     try {
       const response = await fetch('https://formspree.io/f/mzborobd', {
         method: 'POST',
@@ -69,11 +69,11 @@ const ContactMe = () => {
               required
             ></textarea>
           </div>
-          <div className = "submit">
+          <button className = "submit">
           <div className= "submit-btn" type="submit">
             SUBMIT
           </div>
-          </div>
+          </button>
         </form>
         {submitted && <div className="submission-message">Message submitted!</div>}
     </div>
