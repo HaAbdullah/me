@@ -33,8 +33,8 @@
 }
 
 .carousel-item img {
-  height: 100%;
-  width: 100%;
+  height: 65vh; /*  This only changes the height of the container, to change width, change actual item.  */
+  width: 50vw;
   object-fit: cover;
   z-index: 0;
 }
@@ -114,9 +114,7 @@
   display: block;
 }
 @media (max-width: 767px) {
-  .carousel-container {
-    width: 100%; 
-  }
+
 
   .carousel-caption h3{
     font-size: 30px;

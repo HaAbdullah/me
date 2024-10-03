@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import TurboTypistImage from '../resources/TurboTypist1.png';
-import OptiMoveImage from '../resources/Optimove.png';
+import OptiMoveImage from '../resources/OptiMove.png';
 import KeyWeImage from '../resources/KeyWe.jpg';
-import './ProjectsSlider.css'; // Import the CSS file
+import GradReadyGeese from '../resources/GradReadyGeese.png';
+import './ProjectsSlider.css'; 
 
 // GitHub SVG
 const GitHubLogo = (
@@ -23,7 +24,8 @@ function ControlledCarousel() {
   const githubURLs = [
     'https://github.com/HaAbdullah/TurboTypist',
     'https://github.com/HaAbdullah/OptiMove',
-    'https://github.com/HaAbdullah/Keywe'
+    'https://github.com/HaAbdullah/Keywe',
+    'https://github.com/HaAbdullah/StarterHacks/'
   ];
 
   const storeURLs = [
@@ -40,36 +42,34 @@ function ControlledCarousel() {
       </div>
       <div className="carousel-container">
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+        <Carousel.Item>
+            <img src={OptiMoveImage} alt="OptiMove" />
+            <Carousel.Caption>
+              <h3>OptiMove</h3>
+              <h2>Analyzes an image of a chessboard and provides a recommended move for the given chess position</h2>
+              <div className="skills-section">
+                <p>Python, OpenCV, TensorFlow, React, JavaScript, Pandas</p>
+                <a href={githubURLs[1]} target="_blank" rel="noopener noreferrer">
+                  {GitHubLogo}
+                </a>
+                {/* <a href={storeURLs[1]} target="_blank" rel="noopener noreferrer" className="store-button">
+                  View on Store
+                </a> */}
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+                    
           <Carousel.Item>
           <img src={TurboTypistImage} alt="Turbo Typist" />
             <Carousel.Caption>
               <h3>Turbo Typist</h3>
               <h2>An effective and minimalistic desktop application that tests, tracks, and improves your typing speed with a variety of modes, timers, and competitive features.</h2>
               <div className="skills-section">
-                <p>Java, JavaFX, XML, SQL</p>
+                <p>Java, JavaFX, XML, SQL, Docker</p>
                 <a href={githubURLs[0]} target="_blank" rel="noopener noreferrer">
                   {GitHubLogo}
                 </a>
                 {/* <a href={storeURLs[0]} target="_blank" rel="noopener noreferrer" className="store-button">
-                  View on Store
-                </a> */}
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
-          
-          {/* Repeat the above Carousel.Item structure for other projects */}
-          
-          <Carousel.Item>
-            <img src={OptiMoveImage} alt="OptiMove" />
-            <Carousel.Caption>
-              <h3>OptiMove</h3>
-              <h2>Analyzes an image of a chessboard and provides a recommended move for the given chess position</h2>
-              <div className="skills-section">
-                <p>Python, Flask, React, CSS, Axios, JavaScript</p>
-                <a href={githubURLs[1]} target="_blank" rel="noopener noreferrer">
-                  {GitHubLogo}
-                </a>
-                {/* <a href={storeURLs[1]} target="_blank" rel="noopener noreferrer" className="store-button">
                   View on Store
                 </a> */}
               </div>
@@ -89,7 +89,20 @@ function ControlledCarousel() {
                   {GitHubLogo}
                 </a>
                 <a href={storeURLs[2]} target="_blank" rel="noopener noreferrer" className="store-button">
-                  View on Store
+                  View in Chrome Web Store
+                </a>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img src={GradReadyGeese} alt="GradReadyGeese" />
+            <Carousel.Caption>
+              <h3>GradReadyGeese</h3>
+              <h2>Parses a UWaterloo transcript and uses web scraping to determine courses needed to graduate</h2>
+              <div className="skills-section">
+                <p>Python, PyPDF, Selenium, Beauitful Soup, HTML/CSS, JavaScript</p>
+                <a href={githubURLs[4]} target="_blank" rel="noopener noreferrer">
+                  {GitHubLogo}
                 </a>
               </div>
             </Carousel.Caption>

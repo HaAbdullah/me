@@ -1,10 +1,37 @@
 // DesktopNav.js
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './DesktopNav.css';
 
 const DesktopNav = () => {
+  // For animation
+  const [userMoved, setUserMoved] = useState(false)
+
+  const handleScroll = () => {
+    // For animation
+    if (window.scrollY > 50) {
+      setUserMoved(true);
+    } 
+    else setUserMoved(false);
+
+    const scrollPosition = window.scrollY; // Get the current scroll position
+    console.log(scrollPosition)
+    const newHeight = scrollPosition === 0 ? 0 : ((scrollPosition/document.documentElement.scrollHeight + window.innerHeight/document.documentElement.scrollHeight)* 100); // Calculate height based on the current distance/ total distance :D
+
+    // Update the CSS variable on the navbar element
+    document.documentElement.style.setProperty('--line-width', `${newHeight}%`);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll); // Listen for scroll events and call scroll function
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Clean up the event listener
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <div>
+    <nav className={`navbar ${userMoved ? 'scrolled' : ''}`}>
       <div className="navbar-left">
         <span className="logo">Abdullah Hasanjee</span>
         <a href="#hero" className="nav-item">Home</a>
@@ -33,6 +60,7 @@ const DesktopNav = () => {
         </a>
       </div>
     </nav>
+    </div>
   );
 };
 

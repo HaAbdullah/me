@@ -29,7 +29,9 @@
     transform: translateX(-50%);
     z-index: 1; /* Set z-index to be below the rectangles and the circle */
   }
-  
+  .timeline-box p {
+    margin: 0; /* Removes default margin */
+  }
   .timeline-box {
     border: 3px solid #DC4280;
     background: #17181C;
@@ -40,19 +42,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: 33px;
-    width: 400px; /* Adjust the width based on your design */
-    padding: 15px; /* Adjust padding based on your design */
-    margin-bottom: 50px; /* Adjust margin based on your design */
+    width: 400px;
+    padding: 20px 15px 20px 15px;
+    margin-bottom: 50px;
     position: relative;
-    z-index: 2; /* Set z-index to be above the lines but below the circle */
-    top: 30px; /* Adjusted top position to create space above the first rectangle */
+    z-index: 2; 
+
   }
   
   .FirstBox{
     margin-bottom:50px;
   }
   .timeline-box:first-child {
-    margin-top: 50px; /* Reset top position for the first rectangle */
+    margin-top: 50px; 
   }
   
   .timeline-box:last-child {

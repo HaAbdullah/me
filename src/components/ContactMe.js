@@ -70,9 +70,9 @@ const ContactMe = () => {
             ></textarea>
           </div>
           <div className = "submit">
-          <button type="submit">
+          <div className= "submit-btn" type="submit">
             SUBMIT
-          </button>
+          </div>
           </div>
         </form>
         {submitted && <div className="submission-message">Message submitted!</div>}

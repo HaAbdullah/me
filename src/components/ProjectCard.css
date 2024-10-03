@@ -3,10 +3,8 @@
 
 .projects-card {
   list-style-type: none;
-  width: 25%;
   border: 3px solid #545583;
-  width: 420px;
-  height: 220px;
+  width: 410px;
   margin: 10px;
   padding: 15px;
   border-radius: 8px;

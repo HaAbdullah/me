@@ -11,13 +11,20 @@
             <div className="line"></div>
             <div className="FirstBox">
                 <div className = "timeline-box">
-                    <p>Studying Computer Science @ Toronto Metropolitan University</p>
+                    <p>Front End Developer @ MyRide901</p>
                 </div>
-                
             </div>
             <div className="line"></div>
             <div className="timeline-box">
-                <p>Web Developer Internship @ Mind4Youth</p>
+                <p>Event Planner @ Mind4Youth</p>
+            </div>
+            <div className="line"></div>
+            <div className="timeline-box">
+                <p>Studying Computer Science @ Toronto Metropolitan University</p>
+            </div>
+            <div className="line"></div>
+            <div className="timeline-box">
+                <p>Web Developer Intern @ Mind4Youth</p>
             </div>
             <div className="line"></div>
             <div className="timeline-box">

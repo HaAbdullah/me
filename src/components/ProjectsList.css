@@ -6,5 +6,7 @@
   justify-content: center;
   align-items: center;
   margin-left: -32px;
+  flex-wrap: wrap; /* This will ensure cards go to the next line when needed */
+  align-items: stretch; /* Makes all cards match the height of the tallest one */
 }
 

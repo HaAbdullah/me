@@ -1,82 +1,91 @@
-
-
 #footer {
-    background: #17181C;
-    color: #DC4280;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+  background: #17181C;
+  color: #DC4280;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
 }
 
-.up{
-    color: #dc4280; 
+.up {  
+  color: #dc4280; 
   font-size: 40px;
 }
-  
+
 .left-side {
-    color: #DC4280;
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 23px;
+  color: #DC4280;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  flex: 1;
 }
 
 .right-side {
-    display: flex;
-    gap: 20px;
-    align-items: center; 
+  display: flex;
+  gap: 20px;
+  align-items: center; 
+  flex: 1;
+  justify-content: flex-end;
 }
-
-.icon {
-    fill: #DC4280;
-    width: 33px;
-    height: 28px;
-}
-
-@media only screen and (max-width: 100){
-    .icon{
-         width: 20px;
-         height: 20px;
-    }
-    .left-side{
-         font-size: 12px;
-    }
-
-  }
-  @media only screen and (max-width: 768px){
-    .icon{
-         width: 20px;
-         height: 20px;
-    }
-    .left-side{
-         font-size: 12px;
-    }
-    .up{
-        margin-left: 60px;
-    }
-
-  }
 
 #scrollToTop {
-    background: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  margin-top: -20px; /* Half the height of the button, adjust as needed */
 }
 
-
-
 .hoverIconFooter {
-    color: #DC4280;
-    opacity: 1;
-    transition: color 0.05s
+  color: #DC4280;
+  opacity: 1;
+  transition: color 0.3s;
+  width: 33px;
+  height: 28px;
+}
+
+.hoverIconFooter:hover {
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+  #footer {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 60px; /* Make room for the centered button */
   }
-  
-  .hoverIconFooter:hover{
-    color:#FFFFFF;
+
+  .left-side {
+      font-size: 12px;
+      margin-bottom: 10px;
   }
-  
+
+  .right-side {
+      justify-content: center;
+      margin-top: 10px;
+  }
+
+  .hoverIconFooter {
+      width: 25px;
+      height: 25px;
+  }
+
+  #scrollToTop {
+      top: 20px; /* Position at the top for mobile */
+      margin-top: 0;
+  }
+
+  .up {
+      font-size: 30px;
+  }
+}
