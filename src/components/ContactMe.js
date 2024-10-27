@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './ContactMe.css';
+import React, { useState } from "react";
+import "./ContactMe.css";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    message: '',
+    email: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -15,40 +15,38 @@ const ContactMe = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Sent to your main personal email.
+
     try {
-      const response = await fetch('https://formspree.io/f/mzborobd', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mzborobd", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        console.log('Form submitted successfully');
+        console.log("Form submitted successfully");
         setSubmitted(true);
         setTimeout(() => {
           setSubmitted(false);
           setFormData({
-            email: '',
-            message: '',
+            email: "",
+            message: "",
           });
         }, 3000);
       } else {
-        console.error('Form submission failed');
+        console.error("Form submission failed");
       }
     } catch (error) {
-      console.error('Error during form submission:', error);
+      console.error("Error during form submission:", error);
     }
   };
 
   return (
     <section id="contact" className="contact-section">
-    <div className='rectangle3'>
-      <div className='title3'>
-        Contact Me
-      </div>
+      <div className="rectangle3">
+        <div className="title3">Contact Me</div>
         <form onSubmit={handleSubmit}>
           <div className="input-box">
             <input
@@ -69,14 +67,16 @@ const ContactMe = () => {
               required
             ></textarea>
           </div>
-          <button className = "submit">
-          <div className= "submit-btn" type="submit">
-            SUBMIT
-          </div>
+          <button className="submit">
+            <div className="submit-btn" type="submit">
+              SUBMIT
+            </div>
           </button>
         </form>
-        {submitted && <div className="submission-message">Message submitted!</div>}
-    </div>
+        {submitted && (
+          <div className="submission-message">Message submitted!</div>
+        )}
+      </div>
     </section>
   );
 };
