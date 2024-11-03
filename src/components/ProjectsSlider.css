@@ -1,11 +1,11 @@
 .PetProjects h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Outfit;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; 
+  line-height: 20px;
   margin-top: 30px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .carousel-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -53,9 +53,9 @@
 }
 
 .carousel-caption h3 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-style: normal;
   font-size: 50px;
   font-weight: 700;
@@ -63,9 +63,9 @@
 }
 
 .carousel-caption h2 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -74,9 +74,9 @@
 }
 
 .carousel-caption p {
-  color: #DC4280;
+  color: #dc4280;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -93,30 +93,28 @@
 }
 
 .carousel-container .carousel-indicators .active {
-  background-color: #DC4280; 
+  background-color: #dc4280;
 }
 
 .github-logo {
   width: 39px;
   height: 39px;
   fill: white;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .store-button {
-  color: #DC4280;
+  color: #dc4280;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 700;
-  line-height: 1.5; 
+  line-height: 1.5;
   margin-top: 10px;
   display: block;
 }
 @media (max-width: 767px) {
-
-
-  .carousel-caption h3{
+  .carousel-caption h3 {
     font-size: 30px;
     margin-top: -65px;
   }
@@ -132,6 +130,14 @@
     width: 39px;
     height: 39px;
     fill: white;
-    margin-top: -100px; 
+    margin-top: -100px;
   }
+}
+.carousel-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%; /* Make sure the image does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust the image to fit within its container */
 }
