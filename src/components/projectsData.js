@@ -37,7 +37,7 @@ const projectsData = {
   },
   project6: {
     title: "CurrenSea Converter",
-    desc: "World-wide currency converter with a minimalistic aesthetic design.",
+    desc: "World-wide currency converter with a minimalistic aesthetic design",
     techStack: "Python, PyQt5, Fixer.io-API",
     link: "https://github.com/HaAbdullah/CurrenSea",
     open: "https://project1.example.com",
