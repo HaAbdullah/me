@@ -147,7 +147,7 @@ function ControlledCarousel() {
                     JavaScript
                   </p>
                   <a
-                    href={githubURLs[4]}
+                    href={githubURLs[3]}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
